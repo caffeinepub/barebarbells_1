@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Barebarbells e-commerce website with brand logo integration",
+  "architectural_notes": [
+    "Logo image (BB symbol with barbell design and 'YOUR COMEBACK STARTS HERE' tagline) integrated throughout site in header, footer, and all relevant sections"
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-replace-all-existing-placeholder-or-text-based-logos-throughout-the-site-with-the-uploaded-barebarbells-logo-image-stylized-bb-symbol-with-barbell-design-and-your-comeback-starts-here-tagline",
+      "title": "Replace all existing placeholder or text-based logos throughout the site with the uploaded Barebarbells logo image (stylized BB symbol with barbell design and 'YOUR COMEBACK STARTS HERE' tagline)",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Barebarbells",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

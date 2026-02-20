@@ -1,0 +1,35 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace placeholder logos with actual Barebarbells logo image",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Replace all placeholder/text-based logos with uploaded Barebarbells logo image throughout the site",
+      "acceptanceCriteria": [
+        "The uploaded Barebarbells logo image appears in the Navigation component header",
+        "The uploaded Barebarbells logo image appears in the Hero section",
+        "The uploaded Barebarbells logo image appears in the Footer component",
+        "All previous placeholder or text-based logo implementations are removed",
+        "The logo maintains appropriate sizing and quality across all placements"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Replace the current SVG dumbbell icon and 'BAREBARBELLS' text logo with an img element that references the uploaded logo image at frontend/public/assets/IMG_20260220_224309-2.jpg. Maintain appropriate sizing for the navigation header (approximately h-8 to h-10) and ensure the logo is clickable to scroll to top."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Replace the current text-based logo display (stylized 'BAREBARBELLS' text with barbell SVG) with an img element that references the uploaded logo image at frontend/public/assets/IMG_20260220_224309-2.jpg. Size appropriately for the hero section (larger than navigation, approximately h-24 to h-32) and maintain the existing fade-in animation."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Replace the current SVG dumbbell icon and 'BAREBARBELLS' text in the footer with an img element that references the uploaded logo image at frontend/public/assets/IMG_20260220_224309-2.jpg. Size appropriately for the footer (approximately h-6 to h-8) and ensure it maintains proper spacing with surrounding footer content."
+        }
+      ]
+    }
+  ]
+}

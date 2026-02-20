@@ -1,0 +1,45 @@
+{
+  "kind": "build_request",
+  "title": "Replace placeholder logos with actual Barebarbells logo image",
+  "projectName": "Barebarbells",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Replace all existing placeholder or text-based logos throughout the site with the uploaded Barebarbells logo image (stylized BB symbol with barbell design and 'YOUR COMEBACK STARTS HERE' tagline)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5",
+          "msg-6",
+          "msg-7",
+          "msg-8"
+        ],
+        "quotes": [
+          "Remove earlier logo with logo pic everywhere pic attached",
+          "Replace it with this uploaded logo image everywhere throughout the site"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The uploaded Barebarbells logo image appears in the Navigation component header",
+        "The uploaded Barebarbells logo image appears in the Hero section",
+        "The uploaded Barebarbells logo image appears in the Footer component",
+        "All previous placeholder or text-based logo implementations are removed",
+        "The logo maintains appropriate sizing and quality across all placements"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use the exact uploaded logo image file (IMG_20260220_224309-2.jpg) as the source",
+    "Do not create or generate a new logo; use the provided image"
+  ],
+  "nonGoals": [
+    "Creating new logo variations or designs",
+    "Modifying the logo's appearance or styling beyond standard image rendering",
+    "Adding logos to locations not currently displaying a logo"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
